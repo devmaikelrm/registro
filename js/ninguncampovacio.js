@@ -1,4 +1,4 @@
-const regBtn = document.getElementById("regBtn");
+const boton = document.getElementById("regBtn");
 
 regBtn.addEventListener("click", () => {
   const nombre = document.getElementById("nombre").value.trim();
@@ -6,10 +6,9 @@ regBtn.addEventListener("click", () => {
   const email = document.getElementById("email").value.trim();
   const password1 = document.getElementById("password1").value.trim();
   const password2 = document.getElementById("password2").value.trim();
-  const terminos = document.getElementById("terminos").checked;
 
-  // Verificar que todos los campos tengan algún valor y que el checkbox esté marcado
-  const todosLlenos = nombre && apellido && email && password1 && password2 && terminos;
+  // Verificar que todos los campos tengan algún valor
+  const todosLlenos = nombre && apellido && email && password1 && password2;
 
   if (todosLlenos) {
     // Mostrar alerta de éxito
