@@ -1,6 +1,6 @@
-const boton = document.getElementById("regBtn");
+const regBtn = document.getElementById("regBtn");
 
-boton.addEventListener("click", () => {
+regBtn.addEventListener("click", () => {
   const nombre = document.getElementById("nombre").value.trim();
   const apellido = document.getElementById("apellido").value.trim();
   const email = document.getElementById("email").value.trim();
